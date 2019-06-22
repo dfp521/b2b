@@ -11,12 +11,13 @@
 |
 */
 
-Route::group(['namespace' => 'Home'], function ($router) {
+Route::group(['prefix' => 'dyyseo', 'namespace' => 'Admin'], function ($router) {
 
-    $router->get('/', 'HomeController@index')->name('home');
+    $router->get('login', 'LoginController@showLoginForm')->name('admin.login');
+    $router->post('login', 'LoginController@login');
 
 
-    });
+});
 
 
 

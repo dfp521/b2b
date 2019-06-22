@@ -18,7 +18,7 @@ class HomeController extends Controller
     public function index()
     {
         $all=$this->customerRepository->all();
-        print_r($all);exit;
+        return view('/home/index',compact('all'));
 
 
 
