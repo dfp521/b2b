@@ -31,7 +31,7 @@ class LoginController extends Controller
     public function logout()
     {
         $this->guard()->logout();
-        return redirect('/nosay/login');
+        return redirect('/dyyseo/login');
     }
 
     protected function guard()

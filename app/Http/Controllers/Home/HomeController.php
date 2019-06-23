@@ -17,6 +17,7 @@ class HomeController extends Controller
     }
     public function index()
     {
+        echo date("Y-m-d H:i:s");exit;
         $all=$this->customerRepository->all();
         return view('/home/index',compact('all'));
 
